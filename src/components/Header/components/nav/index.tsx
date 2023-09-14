@@ -5,7 +5,7 @@ import logoTrxHead from 'public/logoTrxHead.svg'
 export function Nav() {
   return (
     <nav className='w-full flex justify-center items-center gap-8 py-20 text-white'>
-      <Link href='' className='mr-64'>
+      <Link href='/' className='mr-64'>
         <Image
           src={logoTrxHead}
           alt='Logo of site Trx Head'
@@ -13,18 +13,18 @@ export function Nav() {
           priority={true}
         />
       </Link>
-      <Link href='' className='flex gap-1'>
+      <Link href='/' className='flex gap-1'>
         Home
       </Link>
-      <Link href='' className='flex gap-1'>
+      <Link href='/product' className='flex gap-1'>
         Product
+      </Link><Link href='/serv' className='flex gap-1'>
+        Service
       </Link>
-      <Link href='' className='flex gap-1'>
-      </Link>
-      <Link href='' className='flex gap-1'>
+      <Link href='/about' className='flex gap-1'>
         About
       </Link>
-      <button className='flex font-bold text-slate-600 bg-white p-4 px-10 rounded-md'>
+      <button className='flex  text-white  p-2 px4 rounded-md'>
         Sign In
       </button>
     </nav>
